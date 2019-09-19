@@ -102,6 +102,8 @@ int main() {
 }
 
 void mergeSort(vector<int>& a, vector<int>& tmp, int left, int right){
+    //base is implicit:
+    // because of the if statement and void function type, vectors sized 0 and 1 will fall through
     if(left < right){
         //break the vector down recursively (only shifting indices)
         int midpoint = (left + right - 1)/2;
